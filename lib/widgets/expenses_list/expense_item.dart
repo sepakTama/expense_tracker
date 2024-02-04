@@ -9,12 +9,12 @@ class ExpenseItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 20,
-        vertical: 16,
-      ),
-      child: Card(
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: 16,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -26,13 +26,14 @@ class ExpenseItem extends StatelessWidget {
             Row(
               children: [
                 Text(
-                    '\$${expense.amount.toStringAsFixed(2)}'), // 12.3434 ->12.34
+                  '\$${expense.amount.toStringAsFixed(2)}',
+                ),
                 const Spacer(),
                 Row(
                   children: [
                     Icon(categoryIcons[expense.category]),
                     const SizedBox(width: 8),
-                    Text(expense.formattedDate)
+                    Text(expense.formattedDate),
                   ],
                 ),
               ],

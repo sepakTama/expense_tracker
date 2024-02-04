@@ -27,7 +27,7 @@ void main() {
           style: ElevatedButton.styleFrom(
             backgroundColor: kDarkColorScheme.primaryContainer,
             foregroundColor: kDarkColorScheme.onPrimaryContainer,
-          ),å
+          ),
         ),
       ),
       theme: ThemeData().copyWith(
